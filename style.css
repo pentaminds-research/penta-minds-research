@@ -1030,7 +1030,7 @@
   border-radius: 50%;
   background-color: #ff6b00;
   box-shadow: 0 0 8px #ff6b00;
-  animation: livePulse 2s ease-in-out infinite;
+  animation: livePulse 1.7s ease-in-out infinite;
 }
 
 @keyframes livePulse {
