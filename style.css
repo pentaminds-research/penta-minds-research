@@ -798,6 +798,7 @@
         }
         .affiliation-line {
           color:rgba(255,255,255,.72);
+          text-align: center;
           font-weight:700;
           margin-top:24px
         }
