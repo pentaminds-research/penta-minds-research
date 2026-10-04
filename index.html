@@ -315,12 +315,6 @@
             <a class="social-btn" href="https://go.pentaminds.in/linktree">Linktree</a>
           </div>
           <p class="affiliation-line reveal">Research Division · Penta Minds</p>
-          <p class="affiliation-line">
-            <span class="pmrc-brand"><h1>
-              <span class="pmrc-brand-main">Penta Minds</span>
-              <span class="pmrc-brand-council">Research Council</span>
-            </h1></span>
-          </p>
         </div>
       </section>
     </main>
@@ -509,35 +503,5 @@
         );
         
     </script>
-  
-    <script>
-      {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        if (menuToggle && navLinks) {
-          menuToggle.addEventListener('click', () => {
-            const isOpen = menuToggle.classList.toggle('open');
-            navLinks.classList.toggle('open', isOpen);
-            menuToggle.setAttribute('aria-expanded', String(isOpen));
-          });
-          // Close on nav link click
-          navLinks.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-              menuToggle.classList.remove('open');
-              navLinks.classList.remove('open');
-              menuToggle.setAttribute('aria-expanded', 'false');
-            });
-          });
-        }
-
-        const header = document.querySelector('.site-header');
-        if (header) {
-          window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 40);
-          }, { passive: true });
-        }
-      }
-    </script>
-
   </body>
 </html>
